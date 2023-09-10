@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+
+    <h1>Hola bienvenidos a formularios</h1>
+    <a href="../index.html">Volver atras</a>
+    <br></br>
+
+    <form action="procesar.php" method="post" name="miFormulario" target="_blank" enctype="multipart/form-data" accept-charset="UTF-8" autocomplete="off" novalidate>
+        <!-- Contenido del formulario -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br>
+
+    <form action="procesar.php" name="Formulario" target="_blank">
+        <textarea name="texto" id="Formulario" cols="30" rows="10"></textarea>
+        <br>
+        <input type="number"> ó <input type="range">
+        <br>
+        <input type="date">
+        <br>
+        <input type="checkbox">
+        <br>
+        <input type="radio"> ó <select></select>
+        <br>
+        <select multiple> ó <input type="checkbox">
+        <br>
+        <input type="color">
+        <br>
+        <input type="file">
+        <br>
+        Teléfono: <input type="tel" name="telefono" placeholder="+123445678">
+        <br>
+        <form method="post" action="/send/">
+            Nombre: <input name="nickname">
+            <textarea name="text" cols="80" rows="5"
+                      placeholder="Queridos Reyes Magos, este año me he portado muy bien..."></textarea>
+        </form>
+        <br>
+        <input type="number" value="5.0">
+        <input type="number" value="10">
+        <input type="number" value="-5">
+        <br>
+        <input type="range" value="5.0">
+        <input type="range" value="10">
+        <input type="range" value="-5">
+        <br>
+        <input type="range" value="5.0" onInput="this.nextElementSibling.value = this.value">
+        <output>5.0</output>
+        <br>
+        <form method="post" action="/send/">
+        <input type="number" value="25" min="10" max="50">
+        <input type="range" value="25" min="10" max="50">
+        </form>
+        <br>
+        <form method="post" action="/send/">
+        <input type="number" value="25" min="10" max="50" step="5">
+        </form>
+        <br>
+        <input type="month">
+        <br>
+        <input type="week">
+        <br>
+        <input type="time">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <form method="post" action="/send/">
+        Selecciona la fecha deseada:
+        <input type="date" value="2024-02-25">
+        </form>
+        <br>
+        <form method="post" action="/send/">
+        Selecciona la fecha deseada:
+        <input type="date" min="2024-02-25" max="2024-12-25">
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            Selecciona la fecha deseada:
+        <input type="month" value="2024-11"
+            min="2024-02" max="2024-12" step="2">
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            Selecciona la fecha deseada:
+        <input type="week" value="2024-W19"
+            min="2024-W13" max="2024-W36" step="2">
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            Selecciona la fecha deseada:
+        <input type="time" value="11:00"
+                   min="09:00" max="22:00" step="30">
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            Selecciona la fecha deseada:
+        <input type="datetime-local" value="2024-07-23T11:00"
+           min="2024-03-23T11:00" max="2024-11-23T11:00" step="3600">
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            <input type="checkbox" name="username-enabled"> Mostrar nombre real de usuario
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            <input type="checkbox" name="username-enabled" checked> Mostrar nombre real de usuario
+            <input type="checkbox" name="nickname-enabled"> Mostrar nick de usuario
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            <input type="checkbox" id="indeterminate"> Mostrar nombre real de usuario
+        </form>
+          
+        <script>
+            const input = document.querySelector("#indeterminate");
+            input.indeterminate = true;
+        </script>
+        <br>
+        <form method="post" action="/send/">
+            <input type="radio" value="user"> Particular
+            <input type="radio" value="business"> Empresa
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            Selecciona el color deseado:
+            <input type="color">
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            Selecciona el color deseado:
+            <input type="color" value="#1BF44A">
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            Selecciona la opción deseada:
+        <select>
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+            <option value="3">Opción 3</option>
+        </select>
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            Selecciona la opción deseada:
+        <select>
+            <option value="1">Opción 1</option>
+            <option value="2" selected>Opción 2</option>
+            <option value="3">Opción 3</option>
+        </select>
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            Selecciona la opción deseada:
+        <select multiple>
+            <option value="1">Opción 1</option>
+            <option value="2">Opción 2</option>
+            <option value="3">Opción 3</option>
+            <option value="4">Opción 4</option>
+            <option value="5">Opción 5</option>
+        </select>
+        </form>
+        <br>
+        <form method="post" action="/send/">
+        <input type="text" list="items">
+        <datalist id="items">
+            <option value="manzdev">ManzDev</option>
+            <option value="afor_digital">Afor_digital</option>
+            <option value="padawanstrainer">PadawansTrainer</option>
+            <option value="chrisvdev">ChrisvDev</option>
+        </datalist>
+        </form>
+        <br>
+        <form method="post" action="/send/">
+        <input type="color" list="items">
+        <datalist id="items">
+            <option value="#847283"></option>
+            <option value="#238485"></option>
+        </datalist>
+        </form>
+        <br>
+        <form method="post" action="/send/" enctype="multipart/form-data">
+            <input type="file">
+        </form>
+        <br>
+        <form method="post" action="/send/" enctype="multipart/form-data">
+            Selecciona varias fotos para enviar:
+            <input type="file" accept="image/jpeg" multiple>
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            <fieldset>
+            Nombre de usuario:
+            <input placeholder="Por ej: John Smith">
+          
+            Edad:
+            <input type="number" min="18" placeholder="18">
+            </fieldset>
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            <label for="name">Nombre de usuario:</label>
+            <input id="name" placeholder="Por ej: John Smith">
+          
+            <label for="age">Edad:</label>
+            <input id="age" type="number" min="18" placeholder="18">
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            <progress></progress>
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            <progress value="0.5"></progress>
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            <progress value="0" max="100"></progress>
+        </form>
+        <br>
+        <form method="post" action="/send/">
+            <meter min="0" max="100" value="75"
+                   low="25" high="75" optimum="100">
+        </form>
+        <br>
+        
+    </form>
+
+</body>
+</html>

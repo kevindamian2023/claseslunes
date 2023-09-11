@@ -1,0 +1,70 @@
+/* importacion de tipogracia */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,900&display=swap');
+
+/* selector universal */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+/* selector de etiqueta */
+h1{
+
+    font-weight: 900;
+    color: chartreuse;
+}
+/* selector de etiqueta */
+h2{
+    color: blue;
+}
+/* selector de id */
+#site_text{
+    background-color: black;
+}
+/* selector de clases */
+.subtitles{
+    font-family: 'Poppins';
+}
+
+/* selector por atributo */
+input[disabled]{
+    background-color: aquamarine;
+}
+
+/* selector por id - Boton Enviar*/
+#btn_sent{
+    margin: 50px;
+    padding: 50px;
+}
+/* selector por seudocalse */
+#btn_sent:hover{
+    background-color: aquamarine;
+    color: orange;
+    font-size: 20px;
+}
+
+#papa{
+    margin-left: 50px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.hermanos{
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px;
+}
+
+#nh_uno{
+    color: blue;
+}
+/* selector descendente hijo */
+#papa >.hermanos > #nh_uno{
+    color: orange;
+}
+/* selector descendente */
+#papa .nieto{
+    color: red;
+}

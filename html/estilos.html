@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">BIENVENIDOS A ESTILOS CSS</h1>
+    <a href="../index.html"><h2>VOLVER ATRAS</h2></a>
+    <h2 id="site_text">Tamaño de texto</h2>
+    <h2 id="site_media" class="subtitles" name="subtitles">Redes sociales</h2>
+    <h2 id="site_images" class="subtitles" name="subtitles">Imagenes</h2>
+
+    <label for="">Sexo:</label><br>
+    <label for="">Mas:</label><input type="radio" id="sex_mas" class="input_radio_sex" name="sex_group"><br>
+    <label for="">Fem:</label><input type="radio" id="sex_fem" class="input_radio_sex" name="sex_group"><br>
+
+    <input type="text" disabled>
+    <input type="text" disabled>
+    <input type="text" autofocus><br>
+    <button id="btn_sent">Enviar</button>
+
+    <h2>SELECTOR DESCENDENTE</h2>
+    <div id="papa">
+        <div class="hermanos">
+            <span id="nh_uno" class="nieto hijo">SPAN UNO</span><br>
+            <span id="nh_dos" class="nieto hijo">SPAN DOS</span>
+        </div>
+        <div class="hermanos">
+            <span id="texto" class="nieto hijo">SPAN TRES</span>
+        </div>
+    </div>
+</body>
+</html>

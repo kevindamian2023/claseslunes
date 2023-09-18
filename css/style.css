@@ -68,3 +68,56 @@ input[disabled]{
 #papa .nieto{
     color: red;
 }
+
+span{
+    color: blue;
+}
+
+#title_box{
+    color: #000;
+    font-family: 'Poppins' , sans-serif;
+    background-color: aqua;
+    text-align: center;
+    padding-left: 20px;
+    margin: 50px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(122,73,122,1);
+    word-spacing: 15px;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+#box_father{
+    border: 1px solid #000;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    margin-left: 20px;
+    background-image: url(https://th.bing.com/th/id/R.20aee9fbc48858e41d4cb226926c99d0?rik=ZuhzQhaPxLFfzg&riu=http%3a%2f%2fwww.desdelahabana.net%2fwp-content%2fuploads%2f2010%2f04%2fCuba-pasi%c3%b3n-por-el-buen-f%c3%batbol-650x432.jpg&ehk=hUQp33zLEuUClob7OdB%2bMILbo9kMzWS9Ram996zpgzU%3d&risl=&pid=ImgRaw&r=0 );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*Media querys entre 800 y 1280*/
+@media (min-width: 800px) and (max-width: 1280px){
+    body{
+        background-color: red;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+/* Media querys entre 799 para abajo */
+@media (min-width: 799px){
+    body{
+        background-image: url(https://th.bing.com/th/id/R.20aee9fbc48858e41d4cb226926c99d0?rik=ZuhzQhaPxLFfzg&riu=http%3a%2f%2fwww.desdelahabana.net%2fwp-content%2fuploads%2f2010%2f04%2fCuba-pasi%c3%b3n-por-el-buen-f%c3%batbol-650x432.jpg&ehk=hUQp33zLEuUClob7OdB%2bMILbo9kMzWS9Ram996zpgzU%3d&risl=&pid=ImgRaw&r=0 );
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+

@@ -5,28 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style_login.css">
 </head>
 <body>
-    <!-- <ul>
-        <a href="html/tablas.html">IR a tablas</a>
-    </ul> -->
-    <h2>Escoge a donde quieres ir</h2>
-
-    <ul>
-        <li><a href="html/tablas.html">IR a tablas</a></li>
-        <br>
-        <li><a href="html/formularios.html">IR a formularios</a></li>
-        <br>
-        <li><a href="html/texto.html">IR a texto</a></li>
-        <br>
-        <li><a href="html/semanticas.html">IR a semanticas</a></li>
-        <br>
-        <li><a href="html/agrupacion.html">IR a agrupacion</a></li> 
-        <br>
-        <li><a href="html/estilos.html">Ir a estilos</a></li>
-        <br>
-        <li><a href="html/flexbox.html">Ir a flexbox</a></li>
-    </ul>
-
+    <div class="background"></div>
+    <div class="centering">
+        <form action="" class="my_form">
+            <div class="loging_welcome">
+                <img src="https://img.freepik.com/vector-gratis/lindo-astronauta-montando-cohete-agitando-mano-icono-dibujos-animados-ilustracion-concepto-icono-tecnologia-ciencia_138676-2130.jpg?w=826&t=st=1695666353~exp=1695666953~hmac=ba920db57305815876fe988ca5114d2794a2592c8a18914e7fb3ed3b922566bf" alt="" class="login">
+                <h1>INICIAR SESION</h1>
+            </div>
+            <div class="text_field">
+                <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                aria-label="Email"
+                placeholder="Ingrese su correo electronico" 
+                required>
+                <img src="" alt="">
+            </div>
+            <div class="text_file">
+                <label for="password">password</label>
+                <input type="text" class="password" name="password" placeholder="ingrese su credencial" required>
+                <img src="" alt="">
+            </div>
+            <input type="submit" class="my_form_button" value="Login">
+            <div class="my_form_actions">
+                <div class="my_form">
+                    <span>OLVIDASTE TU CONTRASEÑA</span>
+                    <a href="#" title="Recuperar contraseña">Recuperar contraseña</a>
+                </div>
+                <div class="my_form_signup">
+                    <a href="#" title="Create Account">Crear cuenta</a>
+                </div>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        h1{
+            color: aqua;
+            background-color: azure;
+            text-align: center;
+            box-shadow: 0px 0px 10px 1px;
+        }
+        #father{
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: row-reverse;
+            flex-wrap: nowrap;  
+            /*display: grid;
+            place-items: center;*/
+
+        }
+        #son, #son_one, #son_two, #son_three{
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            border-radius: 15px;
+            transform: translate(-5px, -10px); 
+        }
+        #son_one{
+            background-color: aqua;
+            transform: rotate(45deg);
+        }
+        #son_two{
+            background-color: blue;
+                transform: scale(1.2);
+                border-radius: 50%;
+        }
+        #son_three{
+            background-color: blueviolet;
+            transform: skew(-5deg, -10deg);
+        }
+        #son:hover{
+            transform: scale(1.2);
+            border-radius: 15px;
+            transition: all ease-in-out 0.7s;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!--#content_container>{CLAS FLEXBOX}-->
+        <div id="content_container">
+            <h1>CLASS FLEXBOX</h1>
+            <div id="father">
+                <div id="son"></div>
+                <div id="son_one"></div>    
+                <div id="son_two"></div>    
+                <div id="son_three"></div>        
+            </div>
+        </div>
+    </div>
+</body>
+</html>
